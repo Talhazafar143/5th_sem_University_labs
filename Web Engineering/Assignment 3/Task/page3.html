@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Page3</title>
+  <script>
+    let expiryTime = new Date().getTime() + 5000;
+    function checkExpired() {
+      const currentTime = new Date().getTime();
+      if (expiryTime < currentTime) {
+        alert('Page Expired');
+      }
+    }
+  </script>
+</head>
+<body onload="checkExpired()">
+  <h1>Page3</h1>
+  <p>This page will expire in 5 seconds.</p>
+</body>
+</html>
